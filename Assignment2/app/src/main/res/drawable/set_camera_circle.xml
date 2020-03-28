@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list android:paddingTop="20dp" xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape  android:shape="oval">
+            <solid  android:color="#65AAD8"/>
+            <stroke android:width="0dp"/>
+        </shape>
+    </item>
+    <item android:drawable="@drawable/camera"/>
+
+</layer-list>
