@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:padding="15dp"
+
+    >
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#A9D5CA"
+    android:id="@+id/parentLayout"
+    >
+
+    <RelativeLayout
+        android:id="@+id/siblingLeft"
+        android:layout_height="170dp"
+        android:layout_width="110dp"
+        android:padding="10dp"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_launcher"
+            android:id="@+id/img1"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/rightarrow"
+        android:layout_toRightOf="@id/siblingLeft"
+        android:gravity="right"
+       >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/right"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/rightarrow"
+        android:id="@+id/siblingRight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_toRightOf="@+id/siblingLeft"
+
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textSize="17dp"
+            android:id="@+id/txt1"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Level"
+            android:textSize="13dp"
+            android:id="@+id/txt2"
+            android:layout_below="@+id/txt1"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="15pt"
+            android:text="Info"
+            android:textSize="13dp"
+            android:id="@+id/txt3"
+            android:layout_below="@+id/txt2"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_below="@+id/siblingRight"
+        android:layout_toRightOf="@+id/siblingLeft"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="right">
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Download"
+            android:id="@+id/btn1"
+            android:background="#E1834D"
+            android:textColor="#fff"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>
+
+</RelativeLayout>
